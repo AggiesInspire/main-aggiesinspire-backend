@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 const connect = () => {
   mongoose
-    .connect(process.env.MONGO_URI)
+    .connect(process.env.MONGODB_URI)
     .then(() => {
       console.log("Connected to database");
     })
